@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Thể loại truyện</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+	<main>
+		<div class="sidbar_left">
+			<div class="logo">
+				CMS
+			</div>
+			<div class="menu_sidebar">
+				<ul>
+					<li>
+						<a href="./AccountManager.html" >Tài khoản</a>
+					</li>
+					<li>
+						<a href="#">Nhóm quản trị</a>
+					</li>
+					<li>
+						<a href="./Category.html" class="menu-active">Thể loại truyện</a>
+					</li>
+					<li>
+						<a href="./storylist.html">Truyện</a>
+					</li>
+					<li>
+						<a href="#">Tin Tức</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top_content">
+				<div class="top_left">
+					<button type="button" id="show_hide_sidebar">
+						<i class="fas fa-bars"></i>
+					</button>
+					<form method="GET" action="#" class="ml-4">
+						<div class="input-group">
+							<input type="text" name="keywrod" class="form-control" placeholder="Tìm kiếm ...">
+							<div class="input-group-append">
+								<button type="submit" class="btn">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="top_right mr-5">
+					<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Right-aligned menu
+						</button>
+						<div class="dropdown-menu dropdown-menu-right">
+							<button class="dropdown-item" type="button">Action</button>
+							<button class="dropdown-item" type="button">Another action</button>
+							<button class="dropdown-item" type="button">Something else here</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_content">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Quản lý thể loại</li>
+					</ol>
+				</nav>
+				<div class="content_form">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+								<th scope="col">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row" class="row-id">1</td>
+								<td><input type="text" disabled class="form-control input-catname" placeholder="Tên thể loại" name="cat-name" value="Action"></td>
+								<td><textarea class="cate-description" cols="50" rows="2" disabled>Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh</textarea>
+								<td>
+									<button type="button" disabled class="btn btn-danger btn-delete"><i class="far fa-trash-alt"></i></button>
+									<button type="button" class="btn btn-success btn-edit"  name="btn-edit"><i class="fas fa-pen"></i></button>
+									<button type="button" disabled class="btn btn-success btn-confirm" name="btn-confirm"><i class="fas fa-check"></i></button>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>
+									<td></td>
+									<td></td>
+									
+									<td>
+										<button type="button" class="btn btn-secondary btn-add-line"name="btn-add"><i class="fas fa-plus-circle"></i></button>
+									</td>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/category.js"></script>
+</html>

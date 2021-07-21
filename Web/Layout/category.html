@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<title>Category</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/category_style.css">
+</head>
+<body>
+	<header>
+		<div class="top">
+			<div class="container">
+				<div class="top_content">
+					<div class="left">
+						<span class="logo">
+							<a href="./home.html"><img src="../images/logo1.png"></a>
+						</span>
+						<div class="search">
+							<form method="GET" action="#">
+								<input type="text" name="keyword" placeholder="Nhập tên truyện cần tìm kiếm">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</form>
+						</div>
+					</div>
+					<div class="right">
+						<div class="top_link">
+							<ul>
+								<li><a href="#">Lịch sử</a></li>
+								<li><a href="#">Theo dõi</a></li>
+								<li><a href="#">Tải App<i class="fas fa-mobile-alt"></i></a></li>
+							</ul>
+						</div>
+						<div class="login_button">
+							<button class="login">Đăng nhập</button>
+							<button class="register">Đăng ký</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bot">
+			<div class="container">
+				<div class="top_content">
+					<div class="menu">
+						<ul>
+							<li><a href="./home.html">Trang chủ</a></li>
+							<li>
+								<a class="blue" href="#">Thể loại</a>
+								<i class="fas fa-chevron-down"></i>
+								<div class="sub-menu">
+									<ul class="sub-menu-col">
+										<li><a href="#">Action</a></li>						
+										<li><a href="#">Comedy</a></li>
+										<li><a href="#">Drama</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">Detective</a></li>
+										<li><a href="#">Fantasy</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">Horror</a></li>
+										<li><a href="#">Manhua</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">Mature</a></li>
+										<li><a href="#">Romance</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">Shoujo</a></li>
+										<li><a href="#">Shounen</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">Slice of Life</a></li>
+										<li><a href="#">Sport</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#">List truyện</a>
+								<i class="fas fa-chevron-down"></i>
+								<div class="sub-menu">
+									<ul class="sub-menu-col">
+										<li><a href="#">TOP Ngày</a></li>
+										<li><a href="#">TOP Tuần</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">TOP Tháng</a></li>
+										<li><a href="#">Yêu thích</a></li>
+									</ul>
+									<ul class="sub-menu-col">
+										<li><a href="#">Mới cập nhập</a></li>
+										<li><a href="#">Truyện full</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Lịch sử</a></li>
+							<li><a href="#">Fanpage</a></li>
+							<li><a href="#">Tìm truyện</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="filte_table">
+			<div class="container">
+				<div class="caption">
+					<i class="fas fa-list-ul"></i>
+					<a href="#"></i>Thể loại: Action</a>
+				</div>
+				<div class="box">
+					Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh
+				</div>
+				<div class="category_filter box">
+					<table>
+						<tbody>
+							<tr>
+								<th>Thể loại</th>
+								<td>
+									<div class="select">
+										<select id="category">
+											<option value="#">Action</option>
+											<option value="#">Comedi</option>
+											<option value="#">Drama</option>
+											<option value="#">Detective</option>
+											<option value="#">Fantasy</option>
+											<option value="#">Horror</option>
+											<option value="#">Manhua</option>
+											<option value="#">Mature</option>
+											<option value="#">Romance</option>
+											<option value="#">Shoujo</option>
+											<option value="#">Shounen</option>
+											<option value="#">Slice of life</option>
+											<option value="#">Sport</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Trạng thái</th>
+								<td>
+									<ul>
+										<li><a href="#">Đang tiến hành</a></li>
+										<li><a href="#">Hoàn thành</a></li>
+									</ul>
+								</td>						
+							</tr>
+							<tr>
+								<th>Sắp xếp</th>
+								<td>
+									<div class="select">
+										<select id="sort">
+											<option value="#">Mới cập nhập</option>
+											<option value="#">Lượt xem nhiều nhất</option>
+											<option value="#">Được ưa thích nhất</option>
+											<option value="#">Số lượng chap</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+				</div>	
+			</div>
+		</div>
+		<div class="border_bot">
+			<div class="container">
+				<hr/>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="main_content">
+					<ul class="list-stories grid-6">
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg1.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>										
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg2.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>										
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg3.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg4.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg5.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg6.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg7.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg8.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg9.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg10.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg11.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg6.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg1.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg2.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg3.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg4.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg5.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg6.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg7.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg8.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg9.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg10.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-item">
+								<a href="#"><img class="story-cover" src="../images/bg11.jpg"></a>
+								<div class="top-noitice">
+									<span class="time-ago">1 day ago</span>
+								</div>
+								<h3 class="title-book"><a href="#">Tên truyện</a></h3>
+								<div class="lastest-episode">
+									<a href="#">Chương 1</a>
+								</div>
+								<div class="more-info">
+									<div class="title-more">Tên truyện:</div>
+									<div class="title-more-other">Tên khác:</div>
+									<p class="info">Tình trạng:</p>
+									<p class="info">Lượt xem:</p>
+									<p class="info">Lượt theo dõi:</p>
+									<div class="list-tag">
+										<a class="blue" href="#">Thể loại</a>
+									</div>
+									<div class="excerpt">Nội dung</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="pagination is-rounded">
+					<ul class="pagination-list">
+						<li>
+							<a class="pagination-link is-current" href="#">1</a>
+						</li>
+						<li>
+							<a class="pagination-link" href="#">2</a>
+						</li>
+						<li>
+							<a class="pagination-link" href="#">3</a>
+						</li>
+						<li>
+							<a class="pagination-link" href="#">4</a>
+						</li>
+						<li>
+							<a class="pagination-link" href="#">
+								<span aria-hidden="true">></span>
+							</a>
+						</li>
+						<li>
+							<a class="pagination-link" href="#">
+								<span aria-hidden="true">>></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer_content">
+				<div class="container">
+					<div class="top">
+						<ul>
+							<li>
+								<span>Thể loại</span>
+								<ul>
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Comedy</a></li>
+									<li><a href="#">Drama</a></li>
+									<li><a href="#">Romance</a></li>
+									<li><a href="#">Shoujo</a></li>
+									<li><a href="#">Shounen</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>List Truyện</span>
+								<ul>
+									<li><a href="#">TOP Ngày</a></li>
+									<li><a href="#">TOP Tuần</a></li>
+									<li><a href="#">TOP Tháng</a></li>
+									<li><a href="#">Yêu thích</a></li>
+									<li><a href="#">Mới cập nhập</a></li>
+									<li><a href="#">Truyện full</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Support</span>
+								<ul>
+									<li><a href="#">Troobleshooting</a></li>
+									<li><a href="#">F&A</a></li>
+									<li><a href="#">Báo cáo</a></li>
+									<li><a href="#">Get Help</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Liên hệ</span>
+								<ul>
+									<li><a href="#">Fanpage</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Mail</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer_content_bot">
+				<div class="container">
+					<div class="bot">
+						<div class="left">
+							<span class="logo">
+								<img src="../images/logo1.png">
+							</span>
+							<div>&copy; 2021 Copyright by FoxComics&trade;<br>
+								ad.foxcomics@gmail.com
+							</div>
+						</div>
+						<div class="right">
+							<ul>
+								<li>Design by ThanhDo</li>
+								<li>Dev by ThanhDo</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

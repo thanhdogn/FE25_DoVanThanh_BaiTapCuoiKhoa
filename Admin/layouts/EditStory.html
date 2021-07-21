@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chỉnh sửa truyện</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+	<main>
+		<div class="sidbar_left">
+			<div class="logo">
+				CMS
+			</div>
+			<div class="menu_sidebar">
+				<ul>
+					<li>
+						<a href="./AccountManager.html">Tài khoản</a>
+					</li>
+					<li>
+						<a href="#">Nhóm quản trị</a>
+					</li>
+					<li>
+						<a href="./Category.html">Thể loại truyện</a>
+					</li>
+					<li>
+						<a href="./storylist.html" class="menu-active">Truyện</a>
+					</li>
+					<li>
+						<a href="#">Tin Tức</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top_content">
+				<div class="top_left">
+					<button type="button" id="show_hide_sidebar">
+						<i class="fas fa-bars"></i>
+					</button>
+					<form method="GET" action="#" class="ml-4">
+						<div class="input-group">
+							<input type="text" name="keywrod" class="form-control" placeholder="Tìm kiếm ...">
+							<div class="input-group-append">
+								<button type="submit" class="btn">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="top_right">
+					<button class="btn_account">
+						<img src="../images/avatar10.jpg" width="25px"> Tubean <i class="fas fa-chevron-down"></i>
+						<div class="info hide_info">
+							<ul>
+								<li>
+									<a href="">Profile</a>
+								</li>
+								<li>
+									<a href="">Setting</a>
+								</li>
+								<li>
+									<a href="">Change password</a>
+								</li>
+								<li>
+									<a href="">Logout</a>
+								</li>
+							</ul>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div class="bottom_content">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item"><a href="./storylist.html">Truyện</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Chỉnh sửa truyện</li>
+					</ol>
+				</nav>
+				<h2>Chỉnh sửa truyện</h2>
+				<div class="content_form">
+					<form method="POST" action="">
+						<div class="row">
+							<div class="col-3 ml-3">
+								<img src="../images/story_pic.jpg">
+							</div>
+							<div class="col-6">
+								<span class="sp-name">Tên: Doraemon</span><br/>
+								<span class="sp-other-name">Tên khác: Doraemon</span><br/>
+								<span class="sp-author">Tác giả:Fujiko.F.Fujio</span><br/>
+								<span class="sp-category">Thể loại:</span><br/>
+								<span class="sp-chapter-number">Số chương:200</span><br/>
+								<span class="sp-descript">Nội dung: </span></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<label for="story_other_name">Ảnh bìa</label>
+								<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text">Upload</span>
+								</div>
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile01">
+									<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<div class="form-group">
+									<label for="story_name">Tên truyện</label>
+									<input type="text" id="story_name" name="story_name" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="story_other_name">Tên khác</label>
+									<input type="text" id="story_other_name" name="story_other_name" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="author">Tác giả</label>
+									<input type="text" id="author" name="author" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="slt_category">Thể loại</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+									<label for="input_desc">Mô tả</label>
+									<textarea class="description form-control" id="input_desc" rows="5" cols="50"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+									<label for="slt_category">Danh sách chương</label>
+								</div>
+							</div>
+							<div class="col-7"></div>
+							<div class="col-5">
+								<button class="btn" type="submit">Thêm chương mới</button>
+								<button class="btn" type="submit">Xoá chương</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column_description">
+								<button class="btn btn-save" type="submit">Lưu</button>
+								<button class="btn btn-cancel" type="button">Hủy</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+</html>
